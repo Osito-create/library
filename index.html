@@ -4,10 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Project Library</title>
+    <link rel="stylesheet" href="library.css" />
+    <script src="library.js" defer></script>
   </head>
   <body>
-    <script src="script.js"></script>
+    <h1>MyLibrary</h1>
+
+    <div class="form-container">
+      <form>
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <select>
+          <option value="'not read'">Not read</option>
+          <option value="'read'">Read</option>
+        </select>
+        <button type="button">Add</button>
+      </form>
+
+      <div id="add">+ Add book</div>
+    </div>
+    <table>
+      <thead>
+        <th scope="col">Name</th>
+        <th scope="col">Author</th>
+        <th scope="col">Status</th>
+        <th scope="col"></th>
+      </thead>
+      <tbody></tbody>
+    </table>
   </body>
 </html>
